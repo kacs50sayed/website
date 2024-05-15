@@ -1,0 +1,147 @@
+:root {
+    --main-color: #0096e1;
+    --main-padding-top: 100px;
+    --main-padding-bottom: 100px;
+}
+
+* {
+    --webkit-box-sizing: border-box;
+    --moz-box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: "cairo", sans-serif;
+    background: #d7f7ff;
+    height: 100vh;
+}
+
+.wrapper {
+    background-color: #fff;
+    width: 500px;
+    padding: 25px;
+    margin: 25px auto 0;
+    box-shadow: 0 0 20px rgb(0, 0, 0, 0.5);
+    border-radius: 10px;
+}
+
+.input-group {
+    margin-bottom: 8px;
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    padding: 5px 0;
+}
+
+.input-box {
+    width: 100%;
+    margin-right: 12px;
+    position: relative;
+}
+
+.input-group.input_box h4 {
+    font-size: 80px;
+    font-weight: 500;
+}
+
+.input_box {
+    max-height: 0;
+}
+
+.input_box .name {
+    padding: 14ps 10ps 14px 50px;
+    width: 100;
+    background-color: #fcfcfc;
+    border: 1px solid #0003;
+    outline: none;
+    letter-spacing: 1px;
+    transition: 0.3s;
+    border-radius: 3px;
+    color: #333;
+}
+
+.form {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 350px;
+    height: 640px;
+    background: rgb(165 152 136);
+    border-radius: 15px;
+    box-sizing: border-box;
+}
+
+
+.form .input {
+    display: block;
+    width: 90%;
+    margin-top: 10px;
+    padding: 15px;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    background-color: #f9f9f9;
+    caret-color: var(--main-color);
+}
+
+.form .input:focus {
+    outline: none;
+}
+
+
+.form .content {
+    text-align: center;
+    padding: 20px 10px;
+}
+
+.content .input {
+    display: block;
+    width: 90%;
+    margin-bottom: 25px;
+    padding: 15px;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    background-color: #f9f9f9;
+    caret-color: var(--main-color);
+
+}
+
+.input_box .name:focus,
+.dob:focus {
+    -webkit-box-shadow: 0 0 2px 1px #21cdde;
+    -moz-box-shadow: 0 0 2px 1px #21cdde;
+    box-shadow: 0 0 2px 1px #21cdde;
+    ;
+    border: 1px solid #21cdde;
+
+
+}
+
+.input_box .icon {
+    width: 48px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    top: 0;
+    color: #0003;
+    background-color: #f1f1f1;
+}
+
+.content [type="submit"] {
+    display: inline;
+    width: 40%;
+    text-align: center;
+    padding: 10px;
+    background: linear-gradient(135deg, #71b7e6, #9b59b6);
+    color: white;
+    font-weight: bold;
+    font-size: 25px;
+    border: none;
+    cursor: pointer;
+    transition: var(--main-transition);
+}
